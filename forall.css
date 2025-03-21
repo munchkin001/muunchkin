@@ -1,0 +1,791 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: serif;
+  }
+  
+  body {
+    width: 95%;
+    margin: 0 auto;
+    background-color: rgb(41, 39, 94);
+  }
+  
+  
+  .sect-one {
+    width: 100%;
+    min-height: 20px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    padding: 20px;
+  }
+  
+  
+  .parabox {
+    display: flex;
+    gap: 50px;
+    padding: 20px;
+    position: absolute;
+    margin-top: 300px;
+    margin-left: 70%;
+  
+  }
+  
+  .parallax
+  {
+    border-radius: 30px;
+    background-image: radial-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url('gojo.jpg');
+    min-height: 300px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  a {
+    color: white;
+    text-decoration: none;
+    font-size: 22px;
+  }
+  .a1 {
+    text-decoration: underline;
+    
+  }
+  
+  .parabox a:hover {
+    text-decoration: underline;
+  }
+  
+  .h-box {
+    
+    text-align: center;
+    width: 100%;
+    max-width: 600px;
+    margin: auto;
+    padding: 40px 20px;
+    color: #007bff;
+  }
+  
+  
+  .hp2 {
+    color: rgb(104, 104, 235);
+    font-size: 18px;
+    text-align: center;
+    line-height: 1.5;
+    
+  }
+  
+  .buttonbox {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+  }
+  
+  button {
+    width: 105px;
+    height: 45px;
+    background-color: white;
+    color: rgb(19, 22, 171);
+    border: 1px solid rgb(4, 4, 45);
+    border-radius: 5px;
+    transition: 0.3s;
+  }
+  
+  .bluebutt {
+    background-color: rgb(53, 42, 198);
+    color: white;
+    border: none;
+    border: 1px solid rgb(190, 206, 242);
+  }
+  
+  .bluebutt:hover, button:hover {
+    background-color: rgb(180, 196, 239);
+    color: white;
+  }
+  
+  .bluebutt:hover{
+    background-color: rgb(255, 255, 255);
+    color: rgb(69, 59, 249);
+    
+  }
+  
+  
+  .sectthree {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: minmax(200px,1fr); 
+    gap: 20px;
+    padding: 20px;
+  }
+  
+  .boxiecon {
+    width: 100%;
+    margin: auto;
+    top: 20px;
+    text-align: center;
+  }
+  
+  .imagebox img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    object-fit: cover;
+  }
+  
+  .title1 {
+    color: rgb(82, 107, 234);
+  }
+  .textbox{
+    text-align: left;
+    min-height: 400px;
+  }
+  
+  .sen {
+    color: rgb(141, 157, 237);
+    font-size: 19px;
+    line-height: 1.5;
+    text-align: left;
+    width: 100%;
+    height: 180px;
+  }
+  
+  .pai {
+    color: rgb(214, 223, 247);
+    font-size: 20px;
+    top: 10px;
+    margin-right: 100%;
+  }
+  
+  
+  .sect-four {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
+    gap: 20px;
+    margin-top: 20px;
+    padding: 20px;
+  }
+  
+  .gojopic {
+    width: 100%;
+    height: auto;
+    padding-left: 10%;
+  }
+  
+  .textbox2 {
+    max-width: 500px;
+    
+  }
+  
+  .foot {
+    text-align: center;
+    padding: 50px;
+  }
+  
+  .p3 {
+    font-size: 18px;
+    color: rgb(125, 126, 125);
+  }
+  
+  .demoo {
+    width: 100px;
+    background-color: #d1e6fd;
+    position: absolute;
+    color: #2470f1;
+    right: 170px;
+    font-size: large;
+    text-decoration: none;
+    
+  }
+  
+  @media screen and (min-width: 1024px) and (max-width: 2500px) 
+  {
+    .parabox
+    {
+       padding-left: 2%;
+       padding-top: 210px;
+    }
+  .demoo
+  {
+    margin-right: 5%;
+  }
+  .sectthree
+    {
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: auto;
+    }
+    .sect-four
+    {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    .pai
+    {
+        margin-top: 25%;
+    }
+}
+  @media screen and (min-width: 768px) and (max-width: 1024px) 
+  {
+    .parabox
+  {
+     padding-left: 60%;
+     padding-top: 330px;
+  }
+  .parallax
+  {
+    height: 90%;
+  }
+    .sectthree
+    {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3,1fr);
+    }
+    .sect-four
+    {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    .boxiecon
+    {
+        margin: auto;
+    }
+    .gp
+    {
+        width: 100%;
+        height: 70%;
+    }
+    .pai
+    {
+        margin-top: 25%;
+    }
+    .demoo
+    {
+      margin-top: 50px;
+      right: 60px;
+    }
+  }
+  
+  @media (max-width: 768px) 
+  {
+    .parabox
+  {
+     padding-left: 45%;
+     padding-top: 330px;
+  }
+    .buttonbox {
+        flex-wrap: wrap;
+    }
+    .sectthree
+    {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(4,1fr);
+    }
+    .sect-four
+    {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    .demoo
+    {
+      margin-top: 50px;
+      right: 60px;
+    }
+  }
+  
+  @media(max-width: 500px){
+  .parabox
+  {
+     padding-left: 25%;
+     padding-top: 320px;
+  }
+  .sect-two
+  {
+  grid-template-columns: repeat (1,1fr);
+  width: 50%; height: 50%;
+  }
+  .sect-four
+  {
+  grid-template-columns: repeat (1,1fr); 
+  grid-template-rows: repeat(2,1fr);
+  width: 100%;
+  height: 30%;
+  margin: auto;
+  margin-top: 1200px;
+  }
+  .sectthree
+    {
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows:auto;
+    }
+    .demoo
+    {
+      margin-top: 50px;
+      right: 60px;
+    }
+  }
+  
+  /*---------------------------------about--------------------------------------------*/
+   .a2 {
+    text-decoration: underline;
+    
+  }
+  .aa1
+  {
+    text-decoration: none;
+  }
+  .aa3
+  {
+    text-decoration: none;
+  }
+  .h-box{
+    
+    text-align: center;
+    width: 90%;
+    max-width: 1000px;
+    padding: 40px 20px;
+    margin: auto;
+  }
+  .sectwo-p2
+  {
+    width: 70%;
+    height: 30%;
+    color: rgb(104, 104, 235);
+  }
+  
+  .section3{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5px;
+    margin: 10px;
+    width: 95%;
+    padding-left: 5%;
+   
+  }
+  
+  .imagebox2
+  {
+    
+    width: 100%;
+    height: 50%;
+    margin-left: auto;
+  
+  }
+  .txtbox
+  {
+    background-color: #0f0a3b;
+    width: 50%;
+    height: 400px;
+    
+  }
+  .t1
+  {
+     padding-left: 30px;
+     background-color: #18005a;
+     color: rgb(28, 162, 229);
+      font-size: 30px;
+      font-weight: bold;
+  }
+  .tp1
+  {
+    background-color: #002d5a;
+    color: rgb(28, 162, 229);
+    margin-left: 5%;
+    width: 95%;
+    height: 50%;
+    padding-top: 10px;
+  }
+  .da1
+  {
+    font-size: 20px;
+      color: rgb(209, 89, 143);
+      line-height: 1.5;
+      background-color: #002d5a;
+      padding-left: 30px;
+  }
+  .conie
+  {
+    display: flex;
+    text-align: left;
+    margin: 5px;
+    width: 50%;
+    height: 50%;
+  }
+  
+  img{
+    object-fit: cover;
+    width: 300px;
+    height: 400px;
+  }
+  
+  .parallax2
+  {
+    
+    width: 95%;
+    border-radius: 10px;
+    background-image: radial-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url('gojo8.jpg');
+    min-height: 200px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: auto;
+  }
+  
+  
+  
+  .features-section {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 20px; 
+    padding: 20px;
+    text-align: center;
+    padding-top: 90px;
+    margin-left: 85px;
+    margin: auto;
+    
+  }
+  .i
+  {
+    padding: 20px;
+    box-shadow: 0px 4px 10px rgba(210, 201, 247, 0.1);
+    width: 300px;
+    line-height: 1.5;
+    font-size: 90px;
+    color: rgb(188, 215, 253);
+  }
+  
+  .btn-blue {
+    background-color: #007bff;
+    padding: 10px 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    color: white;
+  }
+  
+  .btn-green {
+    background-color: #28a745;
+    padding: 10px 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    color: white;
+  }
+  
+  .btn-red {
+    background-color: #a82a2a;
+    padding: 10px 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    color: white;
+  }
+  
+  .texhold
+  {
+    text-align: right;
+    width: 120%;
+    height: 50px auto;
+    
+  }
+  .title1
+  {
+    text-align: left;
+  }
+  .p1
+  {
+    width: 70%;
+    height: 30%;
+    text-align: justify;
+    margin-left: 40px;
+    
+  }
+  .section4{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 10px;
+    margin: 0px auto;
+    width: 95%;
+  }
+  .bb
+  {
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    
+  }
+  .p3
+  {
+    text-align: center
+  }
+  .bosref
+  {
+    background-color: transparent;
+  }
+  
+  
+  @media (max-width: 1024px) 
+  {
+    .parabox {
+        
+      text-align: right;
+  }
+    .section3 {
+        grid-template-columns: 1fr; 
+    }
+  
+    .conie {
+        
+        text-align: center;
+    }
+  
+    .features-section {
+        grid-template-columns: repeat(2, 1fr); 
+    }
+    .section4
+    {
+      grid-template-columns: repeat(2,1fr);
+    }
+  }
+  
+  
+  @media (max-width: 768px) {
+    .features-section {
+        grid-template-columns: 1fr; 
+    }
+  
+    .feature-box {
+        width: 90%; 
+        margin: auto;
+    }
+  }
+  @media(max-width:500px)
+  {
+      .section1
+      {
+       width: 30.5%;
+        height: 30.5%;
+      }
+      .sect-two
+      {
+        width: 100%;
+        height: auto;
+      }
+      .conie
+      {
+        grid-template-columns: repeat(1,1fr);
+        grid-template-rows: auto;
+        margin-top: 5%;
+        
+      }
+      .section4
+      {
+        grid-template-columns: repeat(1,1fr);
+        grid-template-rows:repeat(2,1fr);
+        margin-top: 50px;
+      }
+      .homeRedmore
+      {
+        margin-top: 30%;
+      }
+      
+      
+  }
+  
+  /*CONTACTS-------------------------------------------------------------*/
+  
+  .aaa1
+  {
+    text-decoration: none;
+  }
+  
+  .aa2
+  {
+    text-decoration: none;
+  }
+  
+  .a3
+  {
+    text-decoration: underline;
+  }
+  .con-container
+  {
+    width: 95%;
+    min-height: 300px;
+    margin: 0px auto;
+    text-align: center;
+  }
+  p
+  {
+     padding: 20px;
+     width: 50%;
+     font-size: large;
+     margin: 0px auto;
+     color: #ced0fd;
+  }
+  .section2-con
+  {
+      display: flex;
+  }
+  
+  input
+  {
+    width: 50%;
+    margin-left: 20%;
+    padding: 10px;
+    border: none;
+    border-bottom: 2px solid rgb(141, 141, 245);
+    margin-top: 20px;
+    text-size-adjust: 100px;
+    background-color: transparent;
+    font-size: large;
+  }
+  
+  textarea
+  {
+    width: 50%;
+    margin-left: 20%;
+    padding: 12px;
+    padding-bottom: 60px;
+    padding-top: 30px;
+    border: none;
+    border-bottom: 2px solid rgb(141, 141, 245);
+    color: #6c6f72;
+    background-color: transparent;
+    font-size: large;
+  }
+  .qq
+  {
+    color: rgb(214, 214, 252);
+  }
+  
+  .boze {
+    display: flex;
+    justify-content: center;
+    padding-right: 20px;
+    gap: 20px;
+    
+  }
+  
+  .boz {
+    
+    min-height: 300px;
+    width: 40%;
+    padding: 10px;
+    margin: 10px;
+  }
+  .tac {
+    color: rgb(70, 89, 229);
+    font-size: 30px;
+    line-height: 1.5;
+    margin-left: 20%;
+    
+  }
+  
+  .green2 {
+    background-color: rgb(61, 100, 239);
+    color: white;
+    border: none;
+    border: 1px solid rgb(35, 92, 234);
+    margin-left: 75%;
+  }
+  
+  .green2:hover, button:hover {
+    background-color: rgb(53, 88, 212);
+    color: white;
+  }
+  
+  .green2:hover{
+    background-color: rgb(255, 255, 255);
+    color: rgb(45, 70, 231);
+    
+  }
+  
+  .sectwo-pi {
+    color: rgb(61, 56, 190);
+    font-size: 20px;
+    text-align: left;
+    line-height: 1.5;
+    
+  }
+  .sectwo-p
+  {
+    text-align: left;
+  }
+  @media (max-width: 2500px) {
+    .parallax {
+        height: 60vh; 
+    }
+  
+    .parabox {
+        
+        top: 10px;
+        left: 10px;
+    }
+  
+    .boze {
+        grid-template-columns: repeat(2,1fr);
+        align-items: center;
+    }
+  
+    .boz {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+  
+    .sectwo-p {
+        font-size: 16px;
+    }
+  
+    .sectwo-pi {
+        font-size: 14px;
+    }
+  }
+  
+  @media (max-width: 1024px)
+  {
+    .parallax {
+      background-position: top;
+      height: 50vh; 
+    }
+  .parabox {
+      font-size: 18px;
+      margin: 8px;
+  }
+  
+  .boze {
+      flex-direction: column;
+      align-items: center;
+  }
+  
+  .boz {
+      width: 90%;
+      margin-bottom: 20px;
+  }
+  }
+  
+  @media (max-width: 500px)
+  {
+    .boz input, .boz textarea {
+      padding: 15px;
+  }
+  
+  .sectwo-p {
+      font-size: 20px;
+  }
+  
+  .sectwo-pi {
+      font-size: 18px;
+  }
+  
+  .bosref {
+      font-size: 12px;
+  }
+  }
+  
+    
+  
